@@ -1,0 +1,60 @@
+<button class="fixed-button" id = "scrollButton"><span class = "glyphicon glyphicon-arrow-up"></span></button>
+
+<script>
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.addEventListener('scroll', function() {
+    var scrollButton = document.getElementById('scrollButton');
+    var scrollPercentage = (document.documentElement.scrollTop + window.innerHeight) / document.documentElement.scrollHeight * 100;
+
+    if (scrollPercentage >= 20) {
+        scrollButton.classList.add('show');
+    } else {
+        scrollButton.classList.remove('show');
+    }
+});
+
+document.getElementById('scrollButton').addEventListener('click', scrollToTop);
+</script>
+
+<style>
+    
+    #scrollButton {
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  transition: .5s ease;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#scrollButton .glyphicon {
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+#scrollButton.show {
+  opacity: 1; 
+}
+
+#scrollButton:hover {
+    color: white;
+    background-color: #57c5c7;
+    border: solid #57c5c7 1px;
+}
+
+</style>

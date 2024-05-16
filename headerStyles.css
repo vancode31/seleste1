@@ -1,0 +1,199 @@
+#upperHeader{
+    background-color: black;
+    padding: 18px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+} 
+
+p{
+    font-size: 1.3rem;
+    color:white;
+    font-family: 'Rajdhani';
+    margin: 0;
+    display: flex;
+   
+}
+
+.contact{
+    font-size: 1.3rem;
+    color:white;
+    font-family: 'Rajdhani';
+    margin: 0;
+    display: flex;
+    
+    
+}
+
+
+.fa-facebook, .fa-twitter, .fa-pinterest, .fa-instagram {
+  background: #0000;
+  color: white;
+  margin: 0;
+  display: flex;
+  font-size: 1.5rem
+}
+
+
+#middleHeader{
+    padding: 25px;
+    margin: 0px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    border-bottom: solid black 1px;;
+}
+
+.midLinks{
+    text-decoration: none;
+    color:black;
+    font-family: 'Rajdhani';
+    font-size: 2rem;
+    margin: 0px;
+    display: flex;
+}
+
+
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
+
+    .search{
+        height: 100%;
+        width: 35%;
+        background-color: #58C5C7;
+        border-radius: 50px;
+        padding: 5px;
+        display:flex;
+        justify-content: space-between
+    }
+
+    #searchButton{
+        border-radius: 50%;
+        height: 100%;
+        width: 18%;
+        border: none;
+        background-color:black;
+        transition: 0.3s ease;
+        color:white;
+    }
+
+    #searchButton:hover{
+        background-color: white;
+        color:black;
+    }
+
+    input{
+        border: none;
+        background-color: #0000;
+        width: 80%;
+        padding: 8px;
+        color:white;
+    }
+
+    input::placeholder{
+        color:white;
+        font-family: 'Rajdhani';
+        font-size: 1.3rem;
+    }
+
+    input:focus {
+    outline: none;
+    border-color: transparent; 
+  }
+
+  #bottomHeader{
+    background-color: red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  .nav-link{
+        color:black;
+        font-family: 'Rajdhani';
+        font-size: 2rem;
+        bottom: 0px;
+        position: relative; 
+        background-color: #0000;
+  }
+
+  #upperHeader a{
+    transition: .5s ease;
+    color: red;
+  }
+
+  #upperHeader a:hover{
+    color: #58c5c7;
+    text-decoration: none;
+  }
+
+
+
+  .nav-link:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #0087ca;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+  .nav-item{
+    margin: 10px;
+    background-color: transparent !important;
+
+  }
+
+ 
